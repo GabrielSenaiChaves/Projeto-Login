@@ -1,8 +1,13 @@
-body{
-    background-image:
-      url(https://i.pinimg.com/564x/5e/a3/c3/5ea3c3499d59dcc3e5caa5b4c8d1c2ce.jpg);
-   background-attachment: fixed;
-   background-size:cobver;
-   background-position: center center;
+function logar(){
+    var usuario = document.getElementById("usuario");
+    var senha = document.getElementById("senha");
+
+    console.log("Usuário: " + usuario.value+" Senha:" + senha.value);
+
+    if(usuario.value == "Gabriel Chaves" && senha.value == "2g3ui57h"){
+        alert("Usuário autenticado!");
     }
-font-family: 'Rampart One', cursive;
+    else{
+        alert("Usuário ou senha Invalidos!");
+    }
+}
